@@ -9,12 +9,13 @@ const volumeBar = document.querySelector('.volume-bar');
 const speed = document.querySelector('select');
 const currentTime = document.querySelector('.time-elapsed');
 const duration = document.querySelector('.time-duration');
+const pictureInPictureButton = document.querySelector('#picture-in-picture');
 const fullscreenButton = document.querySelector('#fullscreen');
 
 function showPlayIcon() {
 	playPauseButton.classList.replace('fa-pause', 'fa-play');
 	playPauseButton.setAttribute('title', 'Play');
-}
+};
 
 function togglePlay() {
 	if (video.paused) {
@@ -142,4 +143,7 @@ progressRange.addEventListener('click', setProgress);
 volumeRange.addEventListener('click', changeVolume);
 volumeIcon.addEventListener('click', toggleMute);
 speed.addEventListener('change', changeSpeed);
+pictureInPictureButton.addEventListener('click', async () => {
+	await video.requestPictureInPicture();
+});
 fullscreenButton.addEventListener('click', toggleFullscreen);
