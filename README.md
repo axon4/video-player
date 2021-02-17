@@ -1,8 +1,7 @@
-# Video Player
+# Video-Player
 
-* A video player with seek, volume, playback speed, picture-in-picture, and fullscreen functionalities.
-* Preloaded with a soothing video of the sea.
-* Sister Project: <a href='https://github.com/axon4/audio-player' target='_blank'>Audio Player</a>
+* functional video-player with seek, volume, playBack-speed, picture-in-picture, and fullScreen functionalities
+* preLoaded with soothing video of sea
 
 ## Stack
 
